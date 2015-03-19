@@ -21,33 +21,43 @@ while play == True:
         
         if pc == 'pedra' and (jogador == 'tesoura' or jogador == 'lagarto'):
             pcp += 1
+            jp = 0
             print('Computador ganhou a rodada \n Computador ', pcp, ', Jogador ' ,jp)
         elif jogador == 'pedra' and (pc == 'tesoura' or pc == 'lagarto'):
             jp += 1
+            pcp = 0
             print('Você ganhou a rodada \n Computador ', pcp ,', Jogador ' ,jp)
         elif pc == 'tesoura' and (jogador == 'papel' or jogador == 'lagarto'):
             pcp += 1
+            jp = 0
             print('Computador ganhou a rodada \n Computador ', pcp ,', Jogador ' ,jp)
         elif jogador == 'tesoura' and (pc == 'papel' or pc == 'lagarto'):
             jp += 1
+            pcp = 0
             print('Você ganhou a rodada \n Computador ' ,pcp ,', Jogador ' ,jp)
         elif pc == 'papel' and (jogador == 'pedra' or jogador == 'spock'):
             pcp += 1
+            jp = 0
             print('Computador ganhou a rodada \n Computador ' ,pcp ,', Jogador ' ,jp)
         elif jogador == 'papel' and (pc == 'pedra' or pc == 'spock'):
             jp += 1
+            pcp = 0
             print('Você ganhou a rodada \n Computador ' ,pcp ,', Jogador ' ,jp)
         elif pc == 'lagarto' and (jogador == 'spock' or jogador == 'papel'):
             pcp += 1
+            jp = 0
             print('Computador ganhou a rodada \n Computador ' ,pcp ,', Jogador ' ,jp)
         elif jogador == 'lagarto' and (pc == 'spock' or jogador == 'papel'):
             jp += 1
+            pcp = 0
             print('Você ganhou a rodada \n Computador ' ,pcp ,', Jogador ' ,jp)
         elif pc == 'spock' and (jogador == 'tesoura' or jogador == 'pedra'):
             pcp += 1
+            jp = 0
             print('Computador ganhou a rodada \n Computador ' ,pcp ,', Jogador ' ,jp)
         elif jogador == 'spock' and (pc == 'tesoura' or pc == 'pedra'):
             jp += 1
+            pcp = 0
             print('Você ganhou a rodada \n Computador ' ,pcp ,', Jogador ' ,jp)
         elif jogador == pc:
             print('Empate! \n Computador ', pcp ,', Jogador ' ,jp)
